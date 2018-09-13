@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+<h1>HOme</h1>
+    {% block head%}
+    <title>Home</title>
+      {% endblock %}
+
+          {%block body %}
+
+      <fieldset>
+    <legend>Calculate your Performance</legend>
+    <INPUT type="radio" name="sex" value="Male"> Male<BR>
+    <INPUT type="radio" name="sex" value="Female"> Female<BR>
+
+
+    <label for="eyes">WHO stage:</label>
+    <input type="number" id="stage" name="stage"
+           placeholder="Min: 1, max: 4"
+           min="1" max="4" />
+    <span class="validity"></span><br>
+    <label for="eyes">Enter your Duration::</label>
+    <input type="number" id="Duration" name="Duration"
+           placeholder="Min: 1, max: 10"
+           min="1" max="10" />
+    <span class="validity"></span><br>
+
+    <label for="initials">Enter your Start CD4:</label>
+    <input type="number" id="initials" name="initials"
+           placeholder="Min: 10, max: 2000" min="10" max="2000" step="10" />
+    <span class="validity"></span> <br>
+    <label for="final">Enter your Fina CD4:</label>
+    <input type="number" id="final" name="final"
+           placeholder="Min: 10, max: 2000" min="10" max="2000" step="10" />
+    <span class="validity"></span> <br>
+
+    <label for="cd4">WHO stage:</label>
+    <input type="number" id="cd4" name="cd4"
+           placeholder="Min: 1, max: 4"
+           min="1" max="4" /> <br>
+
+          <button type="Submit" name="Submit"></button>
+
+
+
+
+      {% endblock %}
